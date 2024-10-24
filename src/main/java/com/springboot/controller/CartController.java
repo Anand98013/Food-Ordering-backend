@@ -21,7 +21,7 @@ import com.springboot.request.UpdateCartItemRequest;
 import com.springboot.services.CartService;
 import com.springboot.services.UserServices;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mealminglefood.vercel.app")
 @RestController
 @RequestMapping("/api")
 public class CartController {

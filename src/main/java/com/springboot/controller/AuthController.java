@@ -28,7 +28,7 @@ import com.springboot.request.LoginRequest;
 import com.springboot.response.AuthResponse;
 import com.springboot.services.CustomerUserDetailsService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mealminglefood.vercel.app")
 @RestController
 @RequestMapping("/auth")
 public class AuthController {

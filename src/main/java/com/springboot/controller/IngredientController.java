@@ -20,7 +20,7 @@ import com.springboot.request.IngredientCategoryRequest;
 import com.springboot.request.IngredientRequest;
 import com.springboot.services.IngredientsService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mealminglefood.vercel.app")
 @RestController
 @RequestMapping("/api/admin/ingredients")
 public class IngredientController {

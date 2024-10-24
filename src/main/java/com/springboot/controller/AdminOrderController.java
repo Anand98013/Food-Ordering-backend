@@ -19,7 +19,7 @@ import com.springboot.model.User;
 import com.springboot.services.OrderService;
 import com.springboot.services.UserServices;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mealminglefood.vercel.app")
 @RestController
 @RequestMapping("/api/admin")
 public class AdminOrderController {

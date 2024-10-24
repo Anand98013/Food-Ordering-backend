@@ -22,7 +22,7 @@ import com.springboot.model.User;
 import com.springboot.services.RestaurantService;
 import com.springboot.services.UserServices;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mealminglefood.vercel.app")
 @RestController
 @RequestMapping("/api/restaurants")
 public class RestaurantController {

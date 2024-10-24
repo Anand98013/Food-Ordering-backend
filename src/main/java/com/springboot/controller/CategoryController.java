@@ -19,7 +19,7 @@ import com.springboot.model.User;
 import com.springboot.services.CategoryService;
 import com.springboot.services.UserServices;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://mealminglefood.vercel.app")
 @RestController
 @RequestMapping("/api")
 public class CategoryController {

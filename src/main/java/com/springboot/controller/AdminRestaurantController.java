@@ -33,16 +33,14 @@ public class AdminRestaurantController {
 	private UserServices userServices;
 	
 	@PostMapping()
-	public ResponseEntity<?> creatRestaurant(@RequestBody CreateRestaurantRequest req,
-                                         @RequestHeader("Authorization") String jwt) {
-    	try {
-        	User user = userServices.findUserByJwtToken(jwt);
-        	Restaurant restaurant = restaurantService.createRestaurant(req, user);
-        	return new ResponseEntity<>(restaurant, HttpStatus.CREATED);
-    	} catch (Exception ex) {
-        	ex.printStackTrace(); // Print stack trace for debugging
-        	return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new MessageResponse("An error occurred: " + ex.getMessage()));
-    	}
+	public ResponseEntity<Restaurant> creatRestaurant(@RequestBody CreateRestaurantRequest req,
+			@RequestHeader("Authorization") String jwt) throws Exception{
+		User user = userServices.findUserByJwtToken(jwt);
+		
+		Restaurant restaurant = restaurantService.createRestaurant(req, user);
+		
+		return new ResponseEntity<>(restaurant, HttpStatus.CREATED);
+		
 	}
 
 
